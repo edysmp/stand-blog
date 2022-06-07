@@ -1,11 +1,10 @@
-uuid: 125edcd3-7fd6-4395-a87f-606ef0d705ff
+uuid: 96ea24f7-e000-4429-a157-ee4edb7cf36c
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.article
     - node.type.page
-    - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
@@ -13,7 +12,6 @@ dependencies:
     - node
     - path
     - system
-    - taxonomy
     - toolbar
     - tour
 _core:
@@ -32,7 +30,6 @@ permissions:
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
-  - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'
   - 'delete own article content'
@@ -41,7 +38,6 @@ permissions:
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
-  - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
   - 'view own unpublished content'
