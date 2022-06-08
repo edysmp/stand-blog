@@ -1,26 +1,24 @@
-uuid: 0316573a-253e-4fb7-bb4a-81d40df22d22
+uuid: b77fa3d3-d8a2-4305-98f1-35043ec90485
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_tags
-    - node.type.article
+    - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_image
+    - field.field.node.blog_post.field_tags
+    - node.type.blog_post
   module:
-    - comment
+    - media_library
     - path
     - text
-_core:
-  default_config_hash: Pzq9mzrsfoPf775qgEU_SUbHSro9pv1ga-Euh1Ykd_k
-id: node.article.default
+id: node.blog_post.default
 targetEntityType: node
-bundle: article
+bundle: blog_post
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -28,21 +26,22 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 20
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 124
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
+    type: entity_reference_autocomplete
+    weight: 123
     region: content
     settings:
       match_operator: CONTAINS
@@ -79,7 +78,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
