@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.blog_post
     - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:4eccd412-6e03-43e4-b2bb-cb38d9e493ee'
 id: node.blog_post.field_tags
 field_name: field_tags
 entity_type: node
@@ -16,9 +14,7 @@ label: Tags
 description: ''
 required: false
 translatable: true
-default_value:
-  -
-    target_uuid: 4eccd412-6e03-43e4-b2bb-cb38d9e493ee
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
@@ -28,6 +24,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
