@@ -1,4 +1,4 @@
-uuid: db0a694e-c787-42a1-a130-9c29e4212bba
+uuid: c84b3e5a-e29e-4b7b-aa8d-af3f695b597b
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,8 @@ dependencies:
   module:
     - node
     - user
-id: recent_blogs
-label: 'Recent blogs'
+id: recent_posts
+label: 'Recent Posts'
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Recent blogs'
+      title: 'Recent Posts'
       fields:
         title:
           id: title
@@ -168,7 +168,6 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
-      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
