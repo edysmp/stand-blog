@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e5eae0cd-34f2-4de8-88d3-6688017cf87b
+  bundle: webform
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Contact us'
+  created:
+    -
+      value: 1655739131
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /contact
+      langcode: en
+  webform:
+    -
+      target_id: contact_us
+      default_data: ''
+      status: open
+      open: ''
+      close: ''

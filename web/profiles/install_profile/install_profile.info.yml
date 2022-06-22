@@ -1,0 +1,4 @@
+name: Stand Blog install profile
+type: profile
+description: "Builds a Stand Blog site."
+core_version_requirement: ^9
