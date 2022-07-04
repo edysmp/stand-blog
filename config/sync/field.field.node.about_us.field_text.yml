@@ -1,0 +1,23 @@
+uuid: 173979b5-5ec9-4cf4-82ea-fe4c76a802bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.about_us
+  module:
+    - text
+id: node.about_us.field_text
+field_name: field_text
+entity_type: node
+bundle: about_us
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

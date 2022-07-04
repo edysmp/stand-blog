@@ -1,20 +1,20 @@
-uuid: 2b607223-8a4b-449e-85a0-6a2fa46a8fe3
+uuid: 8b0c1e6c-1563-49a9-92c8-f827bc640d1d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.webform.body
-    - field.field.node.webform.webform
-    - node.type.webform
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_computer
+    - field.field.node.about_us.field_information
+    - field.field.node.about_us.field_text
+    - node.type.about_us
   module:
     - text
     - user
-_core:
-  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
-id: node.webform.teaser
+id: node.about_us.teaser
 targetEntityType: node
-bundle: webform
+bundle: about_us
 mode: teaser
 content:
   body:
@@ -31,4 +31,6 @@ content:
     weight: 100
     region: content
 hidden:
-  webform: true
+  field_computer: true
+  field_information: true
+  field_text: true

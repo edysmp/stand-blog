@@ -1,0 +1,30 @@
+uuid: fd384660-94f4-467a-b023-975f20f0cc6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_computer
+field_name: field_computer
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: c3cd5e60-deb0-48a4-ba25-0bc749e930f5
+    alt: Computer
+    title: ''
+    width: 1170
+    height: 550
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

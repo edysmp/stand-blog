@@ -1,0 +1,38 @@
+uuid: 5d325428-80f5-4684-8a8d-ab155e7b1bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_computer
+    - node.type.about_us
+  module:
+    - image
+id: node.about_us.field_computer
+field_name: field_computer
+entity_type: node
+bundle: about_us
+label: Computer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
