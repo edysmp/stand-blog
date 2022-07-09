@@ -1,0 +1,8 @@
+uuid: c3330ae2-9e91-4d38-a62e-5390638f8bc8
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+revision: 0
+description: ''
