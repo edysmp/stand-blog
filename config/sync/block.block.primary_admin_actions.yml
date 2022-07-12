@@ -1,14 +1,14 @@
-uuid: 9afa0f62-d3e2-4e5f-bbff-9e5bb859ce7a
+uuid: aeba9dbe-4419-49c1-b13c-27ce7b495b25
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - olivero
 _core:
-  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
-id: bartik_local_actions
-theme: bartik
-region: content
+  default_config_hash: sDmKoL9ejxB_fvD_qmgOHa8HN3X9AIsbud2xK8brMiI
+id: primary_admin_actions
+theme: olivero
+region: highlighted
 weight: -5
 provider: null
 plugin: local_actions_block
