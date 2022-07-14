@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
   module:
@@ -18,15 +19,20 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          0b1c25f8-bfd3-4982-aa34-20d86f7c0ccb:
-            uuid: 0b1c25f8-bfd3-4982-aa34-20d86f7c0ccb
+          30e7598f-88cd-48b2-a75e-91b3b83fd34a:
+            uuid: 30e7598f-88cd-48b2-a75e-91b3b83fd34a
             region: content
             configuration:
-              id: 'extra_field_block:node:landing_page:links'
+              id: 'inline_block:basic'
+              label: 'Block Text'
               label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 2
+              block_serialized: null
             weight: 0
             additional: {  }
         third_party_settings: {  }
