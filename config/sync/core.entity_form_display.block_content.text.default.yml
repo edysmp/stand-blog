@@ -1,22 +1,20 @@
-uuid: 14b21e5b-c489-4c99-b3e1-7bb8fa9e13c0
+uuid: 7db9754e-dd1f-4a38-8a9d-1d160c5d8fa7
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-    - field.field.block_content.basic.body
+    - block_content.type.text
+    - field.field.block_content.text.body
   module:
     - text
-_core:
-  default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
-id: block_content.basic.default
+id: block_content.text.default
 targetEntityType: block_content
-bundle: basic
+bundle: text
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: -4
+    weight: 26
     region: content
     settings:
       rows: 9

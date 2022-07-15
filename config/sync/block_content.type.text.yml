@@ -1,0 +1,8 @@
+uuid: 86fc2a43-96fd-42bc-adbe-622d2313a804
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+revision: 0
+description: ''

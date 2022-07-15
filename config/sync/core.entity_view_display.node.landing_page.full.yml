@@ -1,8 +1,9 @@
-uuid: 5f905cd8-3898-4003-bca7-869e3439e006
+uuid: 9c6da043-b798-4310-ac04-01be974417ee
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
   module:
@@ -10,19 +11,12 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    enabled: true
-    allow_custom: true
-    sections:
-      -
-        layout_id: layout_builder_blank
-        layout_settings:
-          label: ''
-        components: {  }
-        third_party_settings: {  }
-id: node.landing_page.default
+    enabled: false
+    allow_custom: false
+id: node.landing_page.full
 targetEntityType: node
 bundle: landing_page
-mode: default
+mode: full
 content:
   links:
     settings: {  }
